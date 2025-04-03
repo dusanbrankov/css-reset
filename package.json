@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "minify": "cat normalize.css reset.css | css-minify >reset.min.css"
   },
   "keywords": [],
   "author": "Dušan Brankov <dusanbrankov@proton.me>",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "css-minify": "^2.1.0"
+  }
 }
